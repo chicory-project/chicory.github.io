@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+.page {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.header {
+  text-align: center;
+}
+
+.header .logo {
+  display: block;
+  width: 8rem;
+  height: 8rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 200;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.header h1 strong {
+  font-weight: 400;
+}
+
+.nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav li:not(:last-child)::after {
+  content: "·";
+  margin: 0 0.5em;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.nav a {
+  position: relative;
+  display: inline-block;
+  padding: 0.5em;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0.5em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.nav a:hover::after {
+  opacity: 1;
+}
