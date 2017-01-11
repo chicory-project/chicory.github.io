@@ -30,8 +30,8 @@ body {
 
 .home .logo {
   display: block;
-  width: 8rem;
-  height: 8rem;
+  width: 12rem;
+  height: 12rem;
   margin-bottom: 2rem;
 }
 
@@ -45,6 +45,13 @@ body {
 
 .home h1 strong {
   font-weight: 400;
+}
+
+@media (max-width: 480px) {
+  .home .logo {
+    width: 8rem;
+    height: 8rem;
+  }
 }
 
 .section .content {
