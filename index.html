@@ -5,61 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
     <title>Chicory Project</title>
     <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400"/>
     <link rel="stylesheet" href="/style.css" />
   </head>
-  <body>
-    <header class="page home">
-      <img class="logo" src="/icon.svg" />
-      <h1><strong>Chicory</strong> Project</h1>
+  <body data-index="0">
+    <header class="header">
+      <div class="header-line"></div>
+      <h1 class="logo">
+        <span class="logo-dot"></span>
+        <span class="logo-part left">
+          <span class="logo-text">Chicory</span>
+        </span>
+        <span class="logo-part right">
+          <span class="logo-text">Project</span>
+        </span>
+      </h1>
     </header>
-    <section class="page section project">
-      <div class="content">
-        <h2>Projects</h2>
-        <div class="list">
-          <a class="item" href="https://bitstone.io/" target="_blank">
-            Bitstone
-          </a>
-          <a class="item" href="http://vanilla-ui.com/" target="_blank">
-            Vanilla UI
-          </a>
-          <a class="item" href="https://github.com/vanilla-ui/vanipack" target="_blank">
-            vanipack
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="page section member">
-      <div class="content">
-        <h2>Members</h2>
-        <div class="list">
-          <a class="item" href="https://github.com/lixiaoyan" target="_blank">
-            <img class="avatar" src="/avatar/intptr.svg" />
-            <div class="detail">
-              <h3 class="name">IntPtr</h3>
-              <p class="description">
-                Full-stack
-              </p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="page section contact">
-      <div class="content">
-        <h2>Contacts</h2>
-        <div class="list">
-          <a class="item" href="https://github.com/chicory-project" target="_blank">
-            GitHub
-          </a>
-        </div>
-      </div>
-    </section>
-    <footer class="page footer">
-      <p class="copyright">
-        <span>Copyright &copy; 2017 Chicory Project.</span>
-        <span>All rights reserved.</span>
-      </p>
-    </footer>
+    <div class="page">
+      <main class="main">
+        <section class="section"></section>
+        <section class="section">
+          <h2>Projects</h2>
+          <div class="content">
+            <ul class="list">
+              <li><a href="https://bitstone.io/"><span>Bitstone</span></a></li>
+              <li><a href="http://vanilla-ui.com/"><span>Vanilla UI</span></a></li>
+              <li><a href="https://github.com/vanilla-ui/vanipack"><span>vanipack</span></a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="section">
+          <h2>Members</h2>
+          <div class="content">
+            <ul class="list">
+              <li><a href="https://github.com/lixiaoyan"><img src="/avatar/intptr.svg" />IntPtr</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="section">
+          <h2>Contacts</h2>
+          <div class="content">
+            <ul class="list">
+              <li><a href="https://github.com/chicory-project"><span>GitHub</span></a></li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+    <aside class="dots"></aside>
+    <script src="https://unpkg.com/dom4/build/dom4.js"></script>
+    <script src="https://unpkg.com/do-slide/dist/do-slide.min.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>
